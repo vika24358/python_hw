@@ -19,3 +19,6 @@ from text_templates import WELCOME_TEMPLATE
 
 print('hgHghgHg soojfkdjf'.lower().count('h'))
 print('hgHghgHg soojfkdjf'.upper().count('H'))
+
+head = '*' * 48
+print(head)
