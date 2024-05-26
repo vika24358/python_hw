@@ -17,6 +17,8 @@ emoji = """
 \U0001F438
 """
 
+# this is a comment
+
 print(chr(555))
 print(ord('@'))
 
