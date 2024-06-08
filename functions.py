@@ -1,34 +1,31 @@
-# # user_name = input('Enter your name: ')
-# # normalized_user_name = user_name.strip().title()
-# # print(normalized_user_name)
-# #
-# #
-# # user_surname = input('Enter your surname: ')
-# # normalized_user_surname = user_surname.strip().title()
-# # print(normalized_user_surname)
+# user_name = input('Enter your name: ')
+# normalized_user_name = user_name.strip().title()
+# print(normalized_user_name)
 #
 #
-# def get_normalized_print(message):
-#     user_name = input(message)
-#     normalized_user_name = user_name.strip().title()
-#     print(normalized_user_name)
-#
-#
-# # get_normalized_print('Enter your name: ')
-# # get_normalized_print('Enter your surname: ')
-#
-#
+# user_surname = input('Enter your surname: ')
+# normalized_user_surname = user_surname.strip().title()
+# print(normalized_user_surname)
 
-#
-#
-#
-# def can_you_swim(answer):
-#     positive_part = 'yes'
-#     result = positive_part in answer.lower()
-#     return result
-#
-# print(can_you_swim('yes'))
-# print(can_you_swim('no'))
+
+def get_normalized_print(message):
+    user_name = input(message)
+    normalized_user_name = user_name.strip().title()
+    print(normalized_user_name)
+
+
+# get_normalized_print('Enter your name: ')
+# get_normalized_print('Enter your surname: ')
+
+
+def can_you_swim(answer):
+    positive_part = 'yes'
+    result = positive_part in answer.lower()
+    return result
+
+
+print(can_you_swim('yes'))
+print(can_you_swim('no'))
 
 
 def add_two_numbers(number_1, number_2):
