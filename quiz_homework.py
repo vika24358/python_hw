@@ -6,8 +6,9 @@ from pywebio.session import run_js
 
 total_score = 0
 
-# questions list
 MSG_GREETING_TEXT = "Вітаємо у нашій вікторині! Як вас звати?"
+
+# questions list
 MSG_QUESTION_01 = "Як називається трикутник, у якого всі сторони та кути рівні між собою?"
 MSG_QUESTION_02 = "Яка сума всіх кутів чотирикутника?"
 MSG_QUESTION_03 = "Як називається найдовша сторона прямокутного трикутника?"
