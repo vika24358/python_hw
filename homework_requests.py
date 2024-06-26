@@ -4,7 +4,7 @@ from pywebio import start_server
 
 # part 1
 url1 = 'http://api.open-notify.org/astros.json'
-url2 = 'https://dummyjson.com/users'
+url2 = 'https://dummyjson.com/users?limit=210'
 
 
 def get_all_astronauts() -> list[dict]:
