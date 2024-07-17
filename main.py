@@ -4,10 +4,10 @@ from utils import email_sender
 def main():
     list_of_recipients = [
         'vika24358@ukr.net',
-        'miroshnicelena@ukr.net',
+        'vika24358@ukr.net',
     ]
     email_sender.send_email(
-       list_of_recipients, 'Head', "Body"
+       recipients=list_of_recipients, mail_subject='Head', mail_body="<h1>BODY!!!!</h1>"
     )
 
 
