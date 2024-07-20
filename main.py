@@ -14,7 +14,7 @@ def main():
                   'age': 13}
         body = email_sender.create_welcome_letter(params)
         email_sender.send_email(
-            recipients=list_of_recipients, mail_subject='Head', mail_body=body, attachment='welcome_picture.jpg'
+            recipients=list_of_recipients, mail_subject='Head', mail_body=body, attachment='data.json'
         )
 
 
