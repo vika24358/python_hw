@@ -2,9 +2,9 @@ from typing import Callable
 
 
 def modifying_decorator(func: Callable):
-    result_dict = {}
 
     def wrapper(*args, **kwargs):
+        result_dict = {}
         result = func(*args, **kwargs)
         result_dict.update({'result': result})
         return result_dict
