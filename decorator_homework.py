@@ -1,9 +1,9 @@
 from typing import Callable
 
-result_dict = {}
-
 
 def modifying_decorator(func: Callable):
+    result_dict = {}
+
     def wrapper(*args, **kwargs):
         result = func(*args, **kwargs)
         result_dict.update({'result': result})
@@ -18,6 +18,4 @@ def add_two_numbers(number1: int, number2: int) -> int:
     return result
 
 
-add_two_numbers(1, 10)
-
-print(result_dict)
+print(add_two_numbers(1, 10))
