@@ -13,7 +13,8 @@ class LibraryItem:
 
 
 class Book(LibraryItem):
-    def __init__(self, number_of_pages: int):
+    def __init__(self, number_of_pages: int, title: str, author_or_director: str, year: int):
+        super().__init__(title, author_or_director, year)
         self.number_of_pages = number_of_pages
 
     def description(self):
@@ -21,7 +22,8 @@ class Book(LibraryItem):
 
 
 class Magazine(LibraryItem):
-    def __init__(self, issue_number: int):
+    def __init__(self, issue_number: int, title: str, author_or_director: str, year: int):
+        super().__init__(title, author_or_director, year)
         self.issue_number = issue_number
 
     def description(self):
@@ -29,9 +31,9 @@ class Magazine(LibraryItem):
 
 
 class DVD(LibraryItem):
-    def __init__(self, duration: int):
+    def __init__(self, duration: int, title: str, author_or_director: str, year: int):
+        super().__init__(title, author_or_director, year)
         self.duration = duration
 
     def description(self):
         return f"Title: {self.title}, Author/Director: {self.author_or_director}, Year: {self.year}, Duration: {self.duration}"
-
