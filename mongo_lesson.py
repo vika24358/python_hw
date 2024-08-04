@@ -28,7 +28,7 @@ school_books_docs = [
 # school_books_coll.insert_many(school_books_docs)
 
 query = {
-    'title':  {'$regex': 'Історія*', '$options': 'i'}
+    'title': {'$regex': 'Історія*', '$options': 'i'}
 }
 
 result = school_books_coll.find(query)
