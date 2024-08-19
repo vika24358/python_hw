@@ -6,9 +6,11 @@ from testing_functions_homework import calculate_discount
 
 
 class TestDiscount:
-    def test_discount_regular(self):
-        price = random.randint(0, 10**10)
-        discount_percent = random.randint(0, 100)
+
+    test_args = [(100, 90, 10), (100, 30, 70), (100, 0, 100), (100, 0, 0)]
+
+    @pytest.mark.parametrize('price, discount_percent, expected_result', test_args)
+    def test_discount_regular(self, price, discount_percent, expected_result):
         actual_discount = calculate_discount(price, discount_percent)
         assert actual_discount
 
