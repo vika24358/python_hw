@@ -21,3 +21,21 @@ class TestLibrary:
     def test_delete_wrong_book(self, library2, book1):
         with pytest.raises(KeyError):
             library2.delete_book(book1)
+
+    def test_change_name(self, library1):
+        new_name = "The coolest library"
+        library1.change_name(new_name)
+        assert library1.name == new_name
+
+class TestBook:
+    def test_book_name(self, book1):
+        expected_name = 'Кобзар'
+        assert book1.name == expected_name
+
+    def test_book_author(self, book2):
+        expected_author = "Джоан Роулінг"
+        assert book2.author == expected_author
+
+    def test_amount_of_pages(self, book3):
+        expected_amount_of_pages = 228
+        assert book3.amount_of_pages == expected_amount_of_pages
