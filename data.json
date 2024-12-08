@@ -1,0 +1,9 @@
+{
+    "name": "Alex",
+    "available": false,
+    "age": 15,
+    "hobbies": [
+        "soccer",
+        "football"
+    ]
+}
